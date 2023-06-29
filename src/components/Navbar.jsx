@@ -1,10 +1,13 @@
+import logo from "../images/logo.png";
+import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
+
 const Navbar = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg bg-primary">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="#">
-            Navbar
+            <img src={logo} />
           </a>
           <button
             class="navbar-toggler"
@@ -20,61 +23,34 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="#">
                   Home
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Link
+                  About
                 </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" aria-current="page" href="#">
+                  Projects
+                </a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            <a class="nav-link fs-3 p-1 d-flex" aria-current="page" href="#">
+              <FaLinkedin />
+            </a>
+            <a class="nav-link p-1 fs-3 d-flex" aria-current="page" href="#">
+              <FaFacebook />
+            </a>
+            <a class="nav-link p-1 fs-3 d-flex" aria-current="page" href="#">
+              <FaGithub />
+            </a>
+
+            <button class="btn bg-danger m-2 rounded-5" type="submit">
+              Contact
+            </button>
           </div>
         </div>
       </nav>
