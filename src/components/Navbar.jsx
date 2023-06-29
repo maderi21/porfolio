@@ -48,7 +48,7 @@ const Navbar = () => {
               <FaGithub />
             </a>
 
-            <button class="btn bg-danger m-2 rounded-5" type="submit">
+            <button class="btn bg-secondary m-2 rounded-5" type="submit">
               Contact
             </button>
           </div>
