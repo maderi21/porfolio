@@ -7,6 +7,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import { Row, Col } from "react-bootstrap";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         </button>
       </Col>
       <Footer />
+      <Contact />
     </div>
   );
 }
