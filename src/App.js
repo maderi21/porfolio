@@ -6,6 +6,7 @@ import TechStack from "./components/TechStack";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import { Row, Col } from "react-bootstrap";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,12 @@ function App() {
         </Row>
       </Col>
       <Portfolio />
+      <Col className="d-flex justify-content-center m-5 p-5">
+        <button class="btn bg-danger rounded-5 text-dark px-5" type="submit">
+          SEE MORE POJECTS...
+        </button>
+      </Col>
+      <Footer />
     </div>
   );
 }

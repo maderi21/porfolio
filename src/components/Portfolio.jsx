@@ -23,12 +23,18 @@ const Portfolio = () => {
               </p>
               <Row>
                 <Col sm={4}>
-                  <button class="btn bg-danger rounded-5" type="submit">
+                  <button
+                    class="btn bg-danger rounded-5 text-dark"
+                    type="submit"
+                  >
                     Live Demo <RxEnter />
                   </button>
                 </Col>
                 <Col sm={3}>
-                  <button class="btn bg-secondary rounded-5" type="submit">
+                  <button
+                    class="btn bg-secondary rounded-5 text-danger"
+                    type="submit"
+                  >
                     Code <BiGitBranch />
                   </button>
                 </Col>
@@ -42,7 +48,7 @@ const Portfolio = () => {
         <Row>
           <Col sm={6} className="d-flex align-items-center">
             <Row className="mx-5 py-5">
-              <h4 className="bg-primary text-dark">Hairstylist landing page</h4>
+              <h4 className="bg-primary text-dark">Vinary e-shop</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -71,7 +77,7 @@ const Portfolio = () => {
         <Row>
           <Col sm={6} className="d-flex align-items-center">
             <Row className="mx-5 py-5">
-              <h4 className="bg-primary text-dark">Hairstylist landing page</h4>
+              <h4 className="bg-primary text-dark">Kids blog</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -100,7 +106,7 @@ const Portfolio = () => {
         <Row>
           <Col sm={6} className="d-flex align-items-center">
             <Row className="mx-5 py-5">
-              <h4 className="bg-primary text-dark">Hairstylist landing page</h4>
+              <h4 className="bg-primary text-dark">Rental Houses calculator</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa. Cum sociis natoque
