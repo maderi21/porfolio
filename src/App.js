@@ -3,6 +3,7 @@ import "./custom.scss";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import TechStack from "./components/TechStack";
+import About from "./components/About";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         TECH STACK
       </h4>
       <TechStack />
+      <About />
     </div>
   );
 }
