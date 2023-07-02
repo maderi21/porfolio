@@ -1,7 +1,15 @@
 import logo from "../images/logo.png";
 import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Modal from "react-bootstrap/Modal";
 
 const Navbar = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div>
       <nav class="navbar navbar-expand-lg bg-primary">
@@ -48,9 +56,65 @@ const Navbar = () => {
               <FaGithub />
             </a>
 
-            <button class="btn bg-secondary m-2 rounded-5" type="submit">
+            <button
+              class="btn bg-secondary m-2 rounded-5"
+              type="submit"
+              onClick={handleShow}
+            >
               Contact
             </button>
+            <Modal
+              className="modal-dialog-centered"
+              show={show}
+              onHide={handleClose}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title>I’d love to hear from you</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero sapiente molestias maxime! Ipsa, mollitia ab sunt
+                  obcaecati ad consectetur officiis?
+                </p>
+                <Form>
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control
+                      type="Name"
+                      placeholder="John Doe"
+                      autoFocus
+                    />
+                  </Form.Group>
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control
+                      type="email"
+                      placeholder="name@example.com"
+                      autoFocus
+                    />
+                  </Form.Group>
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlTextarea1"
+                  >
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control as="textarea" rows={3} />
+                  </Form.Group>
+                </Form>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                  Send
+                </Button>
+              </Modal.Footer>
+            </Modal>
           </div>
         </div>
       </nav>

@@ -1,58 +1,72 @@
-import { Col } from "react-bootstrap";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Modal from "react-bootstrap/Modal";
 
 const Contact = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
-    <div>
-      <Col className="container">
-        <h1 className="d-flex justify-content-center mt-5">
-          I would love to hear from you
-        </h1>
-        <p className="d-flex justify-content-center mt-5">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, sapiente
-          aspernatur, dignissimos error perspiciatis ex hic temporibus tempora
-          eligendi nemo, vel sit molestias? Ab maxime quisquam accusamus
-          voluptatem atque vitae. Odit, veniam! Reiciendis totam veritatis quae
-          neque pariatur commodi nisi assumenda a nobis praesentium odio
-          officiis tenetur, officia doloribus repellat.
-        </p>
-        <form className="">
-          <div class="mb-3">
-            <label for="Name" class="form-label d-flex justify-content-center">
-              Name
-            </label>
-            <input
-              type="Name"
-              className="form-control"
-              id="name"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">
-              Password
-            </label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-          <div class="mb-3 form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1">
-              Check me out
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            Submit
-          </button>
-        </form>
-      </Col>
-    </div>
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Launch demo modal
+      </Button>
+      <div>
+        <Modal
+          className="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          show={show}
+          onHide={handleClose}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>I’d love to hear from you</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              sapiente molestias maxime! Ipsa, mollitia ab sunt obcaecati ad
+              consectetur officiis?
+            </p>
+            <Form>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlInput1"
+              >
+                <Form.Label>Name</Form.Label>
+                <Form.Control type="Name" placeholder="John Doe" autoFocus />
+              </Form.Group>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlInput1"
+              >
+                <Form.Label>Email address</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="name@example.com"
+                  autoFocus
+                />
+              </Form.Group>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+              >
+                <Form.Label>Message</Form.Label>
+                <Form.Control as="textarea" rows={3} />
+              </Form.Group>
+            </Form>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
+    </>
   );
 };
 
