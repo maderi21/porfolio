@@ -63,13 +63,14 @@ const Navbar = () => {
             >
               Contact
             </button>
+
             <Modal
               className="modal-dialog-centered d-flex justify-content-center"
               show={show}
               onHide={handleClose}
             >
-              <Modal.Header closeButton className="bg-primary border-0 ">
-                <Modal.Title className="bg-primary d-flex justify-content-center">
+              <Modal.Header closeButton className="bg-primary border-0">
+                <Modal.Title className="bg-primary d-flex justify-content-center ">
                   I’d love to hear from you
                 </Modal.Title>
               </Modal.Header>
