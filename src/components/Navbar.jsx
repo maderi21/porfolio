@@ -64,14 +64,16 @@ const Navbar = () => {
               Contact
             </button>
             <Modal
-              className="modal-dialog-centered"
+              className="modal-dialog-centered d-flex justify-content-center"
               show={show}
               onHide={handleClose}
             >
-              <Modal.Header closeButton>
-                <Modal.Title>I’d love to hear from you</Modal.Title>
+              <Modal.Header closeButton className="bg-primary border-0 ">
+                <Modal.Title className="bg-primary d-flex justify-content-center">
+                  I’d love to hear from you
+                </Modal.Title>
               </Modal.Header>
-              <Modal.Body>
+              <Modal.Body className="bg-primary">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Libero sapiente molestias maxime! Ipsa, mollitia ab sunt
@@ -82,7 +84,7 @@ const Navbar = () => {
                     className="mb-3"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>Name</Form.Label>
+                    <Form.Label className="text-dark">Name</Form.Label>
                     <Form.Control
                       type="Name"
                       placeholder="John Doe"
@@ -93,7 +95,7 @@ const Navbar = () => {
                     className="mb-3"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>Email address</Form.Label>
+                    <Form.Label className="text-dark">Email address</Form.Label>
                     <Form.Control
                       type="email"
                       placeholder="name@example.com"
@@ -104,12 +106,12 @@ const Navbar = () => {
                     className="mb-3"
                     controlId="exampleForm.ControlTextarea1"
                   >
-                    <Form.Label>Message</Form.Label>
+                    <Form.Label className="text-dark">Message</Form.Label>
                     <Form.Control as="textarea" rows={3} />
                   </Form.Group>
                 </Form>
               </Modal.Body>
-              <Modal.Footer>
+              <Modal.Footer className="bg-primary border-0">
                 <Button variant="secondary" onClick={handleClose}>
                   Send
                 </Button>
