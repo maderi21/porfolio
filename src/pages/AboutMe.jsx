@@ -1,28 +1,18 @@
 import Navbar from "../components/Navbar";
 import aboutme from "../images/aboutme.png";
 import { Col, Row } from "react-bootstrap";
-import snowboard from "../images/";
+import snowboard from "../images/snowboarding.jpg";
+import fifestyle from "../images/fifestyle.jpg";
 
 const AboutMe = () => {
   return (
     <>
       <Navbar />
 
-      <div className="container mt-5 position-relative">
+      <div className="container mt-5 ">
         <Row>
           <Col sm={7}>
             <img src={aboutme} alt="" />
-          </Col>
-          <Col sm={4} className="position-absolute top-50 start-50">
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                maiores nihil, dolorum placeat recusandae neque mollitia minus
-                voluptas alias sed?Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Iure maiores nihil, dolorum placeat recusandae
-                neque mollitia minus voluptas alias sed?
-              </p>
-            </div>
           </Col>
         </Row>
         <Row>
@@ -30,16 +20,36 @@ const AboutMe = () => {
             HOW IT ALL STARTED
           </h4>
         </Row>
-        <Row>
-          <p className="text-center">
+        <Row className="text-center">
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo
           </p>
           <h1>1-first site</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
             soluta quibusdam inventore aperiam veniam nihil earum ad error
-            tempora obcaecati!
-            <img src={snowboard} />
+            tempora obcaecati!Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Expedita soluta quibusdam inventore aperiam veniam
+            nihil earum ad error tempora obcaecati!
+            <img className="" src={snowboard} />
+          </p>
+          <h1>2-fifestyle</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            soluta quibusdam inventore aperiam veniam nihil earum ad error
+            tempora obcaecati!Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Expedita soluta quibusdam inventore aperiam veniam
+            nihil earum ad error tempora obcaecati!
+            <img className="" src={fifestyle} />
+          </p>
+          <h1>3-grinding now</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            soluta quibusdam inventore aperiam veniam nihil earum ad error
+            tempora obcaecati!Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Expedita soluta quibusdam inventore aperiam veniam
+            nihil earum ad error tempora obcaecati!
+            <img className="" src={snowboard} />
           </p>
         </Row>
       </div>
