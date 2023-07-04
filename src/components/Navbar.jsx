@@ -15,7 +15,7 @@ const Navbar = () => {
     <div>
       <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container">
-          <Link class="navbar-brand" to="/">
+          <Link class="navbar-brand" exact to="/">
             <img src={logo} />
           </Link>
           <button
