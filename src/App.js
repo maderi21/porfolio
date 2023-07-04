@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio";
 import { Row, Col } from "react-bootstrap";
 import Footer from "./components/Footer";
 import AboutMe from "./pages/AboutMe";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       </Col>
       <Footer />
       <AboutMe />
+      <Projects />
     </div>
   );
 }
