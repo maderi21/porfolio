@@ -42,13 +42,28 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            <a class="nav-link fs-3 p-1 d-flex" aria-current="page" href="#">
+            <a
+              class="nav-link fs-3 p-1 d-flex"
+              href="https://www.linkedin.com/in/marek-kostolansky-762185206/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin />
             </a>
-            <a class="nav-link p-1 fs-3 d-flex" aria-current="page" href="#">
+            <a
+              class="nav-link p-1 fs-3 d-flex"
+              href="https://www.facebook.com/profile.php?id=1617340063"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebook />
             </a>
-            <a class="nav-link p-1 fs-3 d-flex" aria-current="page" href="#">
+            <a
+              class="nav-link p-1 fs-3 d-flex"
+              href="https://github.com/maderi21"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub />
             </a>
 
