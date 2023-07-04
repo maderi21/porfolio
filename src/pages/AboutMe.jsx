@@ -1,58 +1,113 @@
 import Navbar from "../components/Navbar";
 import aboutme from "../images/aboutme.png";
-import { Col, Row } from "react-bootstrap";
+import third from "../images/third.jpg";
 import snowboard from "../images/snowboarding.jpg";
 import fifestyle from "../images/fifestyle.jpg";
+import Footer from "../components/Footer";
 
 const AboutMe = () => {
   return (
     <>
       <Navbar />
 
-      <div className="container mt-5 ">
-        <Row>
-          <Col sm={7}>
-            <img src={aboutme} alt="" />
-          </Col>
-        </Row>
-        <Row>
-          <h4 className="bg-primary d-flex justify-content-center text-dark m-0 pt-5 pb-3">
-            HOW IT ALL STARTED
-          </h4>
-        </Row>
-        <Row className="text-center">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo
-          </p>
-          <h1>1-first site</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-            soluta quibusdam inventore aperiam veniam nihil earum ad error
-            tempora obcaecati!Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Expedita soluta quibusdam inventore aperiam veniam
-            nihil earum ad error tempora obcaecati!
-            <img className="" src={snowboard} />
-          </p>
-          <h1>2-fifestyle</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-            soluta quibusdam inventore aperiam veniam nihil earum ad error
-            tempora obcaecati!Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Expedita soluta quibusdam inventore aperiam veniam
-            nihil earum ad error tempora obcaecati!
-            <img className="" src={fifestyle} />
-          </p>
-          <h1>3-grinding now</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-            soluta quibusdam inventore aperiam veniam nihil earum ad error
-            tempora obcaecati!Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Expedita soluta quibusdam inventore aperiam veniam
-            nihil earum ad error tempora obcaecati!
-            <img className="" src={snowboard} />
-          </p>
-        </Row>
-      </div>
+      <section class="p-5" id="learn">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+              <img class="img-fluid rounded-3" src={aboutme} alt="" />
+            </div>
+            <div class="col-md p-5">
+              <h1 className="bg-danger">Hi, I’m Marek.</h1>
+              <h2 class="bg-danger">It is really nice to see you here</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat neque id ipsa nisi doloremque quos a facere
+                reprehenderit, consequuntur delectus expedita numquam itaque
+                voluptate voluptatum iure, illo obcaecati ex? Vel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-5 bg-dark" id="learn">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5 text-light">
+              <h2>1 phase</h2>
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                asperiores labore non, ad aliquid accusantium?
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat neque id ipsa nisi doloremque quos a facere
+                reprehenderit, consequuntur delectus expedita numquam itaque
+                voluptate voluptatum iure, illo obcaecati ex? Vel.
+              </p>
+            </div>
+            <div class="col-md">
+              <img
+                class="img-fluid rounded-3 shadow p-3 mb-3"
+                src={snowboard}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-5" id="learn">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+              <img
+                class="img-fluid rounded-3 shadow p-3 mb-3"
+                src={fifestyle}
+                alt=""
+              />
+            </div>
+            <div class="col-md p-5">
+              <h2>2 phase</h2>
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                asperiores labore non, ad aliquid accusantium?
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat neque id ipsa nisi doloremque quos a facere
+                reprehenderit, consequuntur delectus expedita numquam itaque
+                voluptate voluptatum iure, illo obcaecati ex? Vel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-5 bg-dark" id="learn">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5 text-light">
+              <h2>3 phase</h2>
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                asperiores labore non, ad aliquid accusantium?
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat neque id ipsa nisi doloremque quos a facere
+                reprehenderit, consequuntur delectus expedita numquam itaque
+                voluptate voluptatum iure, illo obcaecati ex? Vel.
+              </p>
+            </div>
+            <div class="col-md">
+              <img
+                class="img-fluid rounded-3 shadow p-3 mb-3"
+                src={third}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </>
   );
 };
