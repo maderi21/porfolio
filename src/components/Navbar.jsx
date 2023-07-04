@@ -4,6 +4,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -14,9 +15,9 @@ const Navbar = () => {
     <div>
       <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <Link class="navbar-brand" to="/">
             <img src={logo} />
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,19 +32,14 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+                <Link class="nav-link" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <Link class="nav-link" to="/projects">
                   Projects
-                </a>
+                </Link>
               </li>
             </ul>
             <a class="nav-link fs-3 p-1 d-flex" aria-current="page" href="#">

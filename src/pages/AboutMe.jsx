@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import aboutme from "../images/aboutme.png";
 import third from "../images/third.jpg";
 import snowboard from "../images/snowboarding.jpg";
@@ -8,8 +7,6 @@ import Footer from "../components/Footer";
 const AboutMe = () => {
   return (
     <>
-      <Navbar />
-
       <section class="p-5" id="learn">
         <div class="container">
           <div class="row align-items-center justify-content-between">

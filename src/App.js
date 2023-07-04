@@ -9,11 +9,16 @@ import { Row, Col } from "react-bootstrap";
 import Footer from "./components/Footer";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="bg-primary">
       <Navbar />
+      <Routes>
+        <Route path="about" element={<AboutMe />} />
+        <Route path="projects" element={<Projects />} />
+      </Routes>
       <Header />
       <h4 className="bg-primary d-flex justify-content-center text-dark m-0 pt-5 pb-3">
         TECH STACK
@@ -32,8 +37,6 @@ function App() {
         </button>
       </Col>
       <Footer />
-      <AboutMe />
-      <Projects />
     </div>
   );
 }
