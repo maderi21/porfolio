@@ -1,12 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./custom.scss";
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import TechStack from "./components/TechStack";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import { Row, Col } from "react-bootstrap";
-import Footer from "./components/Footer";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import { Routes, Route } from "react-router-dom";
