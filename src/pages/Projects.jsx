@@ -6,9 +6,9 @@ import Footer from "../components/Footer";
 const Projects = () => {
   return (
     <>
-      <div>
-        <Col className="container">
-          <Row>
+      <div className="container">
+        <Row>
+          <Col>
             <h4 className="bg-primary d-flex justify-content-center text-dark m-0 pt-5 pb-3">
               PROJECTS
             </h4>
@@ -23,8 +23,8 @@ const Projects = () => {
               mollitia iure, ex vel neque laborum fugit consequuntur nemo
               reprehenderit laboriosam voluptate?
             </p>
-          </Row>
-        </Col>
+          </Col>
+        </Row>
         <section class="p-5">
           <div class="container">
             <div class="row text-center g-4">

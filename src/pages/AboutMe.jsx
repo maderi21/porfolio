@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const AboutMe = () => {
   return (
     <>
-      <section class="p-5" id="learn">
+      <section class="p-5">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md">
@@ -26,7 +26,7 @@ const AboutMe = () => {
           </div>
         </div>
       </section>
-      <section class="p-5 bg-dark" id="learn">
+      <section class="p-5 bg-dark">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5 text-light">
@@ -52,7 +52,7 @@ const AboutMe = () => {
           </div>
         </div>
       </section>
-      <section class="p-5" id="learn">
+      <section class="p-5">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md">
@@ -78,7 +78,7 @@ const AboutMe = () => {
           </div>
         </div>
       </section>
-      <section class="p-5 bg-dark" id="learn">
+      <section class="p-5 bg-dark">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5 text-light">
