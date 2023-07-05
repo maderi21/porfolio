@@ -1,39 +1,30 @@
-import { Row, Col, Image, Container } from "react-bootstrap";
 import about from "../images/about.jpg";
+
 const About = () => {
   return (
-    <section className="bg-primary">
-      <Container className="py-5 ">
-        <Row>
-          <Col sm={6}>
-            <Image src={about} rounded />
-          </Col>
-          <Col
-            sm={6}
-            className="d-flex align-items-center justify-content-center"
-          >
-            <Row className="mx-5 py-5">
-              <p className="text-dark-bold rounded d-flex justify-content-center">
-                ABOUT ME
-              </p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
-                voluptatum consequuntur amet similique doloribus rem in
-                architecto cum commodi corporis eos, deleniti animi vel
-                officiis, dolore atque doloremque magni laudantium mollitia?
-                Assumenda natus praesentium est ex impedit sequi corporis
-                sapiente!
-              </p>
-              <a
-                href="#"
-                className="text-dark link-offset-2 link-underline link-underline-opacity-0"
-              >
-                keep reading my bio...
-              </a>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
+    <section class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img class=" img-fluid rounded-3" src={about} alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h3 className="fw-light">About me</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+              neque id ipsa nisi doloremque quos a facere reprehenderit,
+              consequuntur delectus expedita numquam itaque voluptate voluptatum
+              iure, illo obcaecati ex? Vel.
+            </p>
+            <a
+              href=""
+              className="link-offset-2 link-underline link-underline-opacity-0 text-dark"
+            >
+              continue to read...
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

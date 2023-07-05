@@ -16,7 +16,9 @@ const Home = () => {
       <About />
       <Col className="container">
         <Row>
-          <h4 className="bg-primary text-dark">PORTFOLIO</h4>
+          <h4 className="bg-primary d-flex justify-content-center text-dark m-0 pt-5 pb-3">
+            PORTFOLIO
+          </h4>
         </Row>
       </Col>
       <Portfolio />
