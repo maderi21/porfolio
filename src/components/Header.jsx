@@ -1,25 +1,23 @@
 import React from "react";
-import { Col, Container, Row, Image } from "react-bootstrap";
 import hero from "../images/hero.png";
 
 const Header = () => {
   return (
-    <section className="bg-primary">
-      <Container className="py-5 ">
-        <Row>
-          <Col sm={7} className="d-flex align-items-center">
-            <Row className="mx-5 py-5">
-              <h1 className="display-2 fs-1">
-                Hi! My name is Marek Kostolansky
-              </h1>
-              <p className="fs-1 m-0">Front End Developer</p>
-            </Row>
-          </Col>
-          <Col sm={5}>
-            <Image src={hero} className="container " />
-          </Col>
-        </Row>
-      </Container>
+    <section class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md text-center">
+            <h1 className="">
+              Hi! My name is
+              <span className="text-dark fw-bold mx-2">Marek Kostolansky</span>
+            </h1>
+            <h1>Front End Developer</h1>
+          </div>
+          <div class="col-md">
+            <img className="img-fluid" src={hero} alt="" />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
