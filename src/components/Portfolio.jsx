@@ -1,4 +1,3 @@
-import { Row, Col, Image, Container } from "react-bootstrap";
 import gabriela from "../images/gabriela.jpg";
 import { RxEnter } from "react-icons/rx";
 import { BiGitBranch } from "react-icons/bi";
@@ -8,132 +7,148 @@ import RE from "../images/realestate.jpg";
 
 const Portfolio = () => {
   return (
-    <section className="bg-primary">
-      <Container className="py-5 ">
-        <Row>
-          <Col sm={6} className="d-flex align-items-center">
-            <Row className="mx-5 py-5">
-              <h4 className="bg-primary text-dark">Hairstylist landing page</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et.Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                natoque penatibus et
+    <>
+      <section class="p-5 ">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+              <h4 className="text-dark">Hairstylist landing page</h4>
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                asperiores labore non, ad aliquid accusantium?
               </p>
-              <Row>
-                <Col sm={4}>
-                  <button
-                    class="btn bg-danger rounded-5 text-dark"
-                    type="submit"
-                  >
-                    Live Demo <RxEnter />
-                  </button>
-                </Col>
-                <Col sm={3}>
-                  <button
-                    class="btn bg-secondary rounded-5 text-danger"
-                    type="submit"
-                  >
-                    Code <BiGitBranch />
-                  </button>
-                </Col>
-              </Row>
-            </Row>
-          </Col>
-          <Col sm={6}>
-            <Image src={gabriela} className="container p-3" />
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={6} className="d-flex align-items-center">
-            <Row className="mx-5 py-5">
-              <h4 className="bg-primary text-dark">Vinary e-shop</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et.Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                natoque penatibus et
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat neque id ipsa nisi doloremque quos a facere
+                reprehenderit, consequuntur delectus expedita numquam itaque
+                voluptate voluptatum iure, illo obcaecati ex? Vel.
               </p>
-              <Row>
-                <Col sm={4}>
-                  <button class="btn bg-danger rounded-5" type="submit">
-                    Live Demo <RxEnter />
-                  </button>
-                </Col>
-                <Col sm={3}>
-                  <button class="btn bg-secondary rounded-5" type="submit">
-                    Code <BiGitBranch />
-                  </button>
-                </Col>
-              </Row>
-            </Row>
-          </Col>
-          <Col sm={6}>
-            <Image src={kopce} className="container p-3 " />
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={6} className="d-flex align-items-center">
-            <Row className="mx-5 py-5">
-              <h4 className="bg-primary text-dark">Kids blog</h4>
+              <div className="mx-2">
+                <button class="btn bg-danger rounded-5 mx-3 mb-3" type="submit">
+                  Live Demo <RxEnter />
+                </button>
+                <button
+                  class="btn bg-secondary rounded-5 mx-3 mb-3"
+                  type="submit"
+                >
+                  Code <BiGitBranch />
+                </button>
+              </div>
+            </div>
+            <div class="col-md">
+              <img
+                class="img-fluid rounded-3 shadow mb-3"
+                src={gabriela}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-5 ">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+              <h4 className="text-dark">Vinary e-shop</h4>
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                asperiores labore non, ad aliquid accusantium?
+              </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et.Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                natoque penatibus et
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat neque id ipsa nisi doloremque quos a facere
+                reprehenderit, consequuntur delectus expedita numquam itaque
+                voluptate voluptatum iure, illo obcaecati ex? Vel.
               </p>
-              <Row>
-                <Col sm={4}>
-                  <button class="btn bg-danger rounded-5" type="submit">
-                    Live Demo <RxEnter />
-                  </button>
-                </Col>
-                <Col sm={3}>
-                  <button class="btn bg-secondary rounded-5" type="submit">
-                    Code <BiGitBranch />
-                  </button>
-                </Col>
-              </Row>
-            </Row>
-          </Col>
-          <Col sm={6}>
-            <Image src={kiddos} className="container p-3" />
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={6} className="d-flex align-items-center">
-            <Row className="mx-5 py-5">
-              <h4 className="bg-primary text-dark">Rental Houses calculator</h4>
+              <div className="mx-2">
+                <button class="btn bg-danger rounded-5 mx-3 mb-3" type="submit">
+                  Live Demo <RxEnter />
+                </button>
+                <button
+                  class="btn bg-secondary rounded-5 mx-3 mb-3"
+                  type="submit"
+                >
+                  Code <BiGitBranch />
+                </button>
+              </div>
+            </div>
+            <div class="col-md">
+              <img class="img-fluid rounded-3 shadow mb-3" src={kopce} alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-5 ">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+              <h4 className="text-dark">Kids blog</h4>
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                asperiores labore non, ad aliquid accusantium?
+              </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et.Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                natoque penatibus et
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat neque id ipsa nisi doloremque quos a facere
+                reprehenderit, consequuntur delectus expedita numquam itaque
+                voluptate voluptatum iure, illo obcaecati ex? Vel.
               </p>
-              <Row>
-                <Col sm={4}>
-                  <button class="btn bg-danger rounded-5" type="submit">
-                    Live Demo <RxEnter />
-                  </button>
-                </Col>
-                <Col sm={3}>
-                  <button class="btn bg-secondary rounded-5" type="submit">
-                    Code <BiGitBranch />
-                  </button>
-                </Col>
-              </Row>
-            </Row>
-          </Col>
-          <Col sm={6}>
-            <Image src={RE} className="container p-3 " />
-          </Col>
-        </Row>
-      </Container>
-    </section>
+              <div className="mx-2">
+                <button class="btn bg-danger rounded-5 mx-3 mb-3" type="submit">
+                  Live Demo <RxEnter />
+                </button>
+                <button
+                  class="btn bg-secondary rounded-5 mx-3 mb-3"
+                  type="submit"
+                >
+                  Code <BiGitBranch />
+                </button>
+              </div>
+            </div>
+            <div class="col-md">
+              <img
+                class="img-fluid rounded-3 shadow mb-3"
+                src={kiddos}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-5 ">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+              <h4 className="text-dark">Rental Homes Calculator</h4>
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                asperiores labore non, ad aliquid accusantium?
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat neque id ipsa nisi doloremque quos a facere
+                reprehenderit, consequuntur delectus expedita numquam itaque
+                voluptate voluptatum iure, illo obcaecati ex? Vel.
+              </p>
+              <div className="mx-2">
+                <button class="btn bg-danger rounded-5 mx-3 mb-3" type="submit">
+                  Live Demo <RxEnter />
+                </button>
+                <button
+                  class="btn bg-secondary rounded-5 mx-3 mb-3"
+                  type="submit"
+                >
+                  Code <BiGitBranch />
+                </button>
+              </div>
+            </div>
+            <div class="col-md">
+              <img class="img-fluid rounded-3 shadow mb-3" src={RE} alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

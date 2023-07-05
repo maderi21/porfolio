@@ -23,7 +23,7 @@ const Home = () => {
       </Col>
       <Portfolio />
       <Col className="d-flex justify-content-center m-5 p-5">
-        <button class="btn bg-danger rounded-5 text-dark px-5" type="submit">
+        <button class="btn bg-danger rounded-5 text-dark px-4" type="submit">
           SEE MORE POJECTS...
         </button>
       </Col>
