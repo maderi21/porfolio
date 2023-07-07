@@ -1,6 +1,6 @@
 import aboutme from "../images/aboutme.png";
 import third from "../images/third.jpg";
-import snowboard from "../images/snowboarding.jpg";
+import snow from "../images/snow.png";
 import fifestyle from "../images/fifestyle.jpg";
 import Footer from "../components/Footer";
 
@@ -11,7 +11,11 @@ const AboutMe = () => {
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md">
-              <img class="img-fluid rounded-3" src={aboutme} alt="" />
+              <img
+                class="img-fluid rounded-3 shadow mb-1"
+                src={aboutme}
+                alt=""
+              />
             </div>
             <div class="col-md p-5">
               <h1 className="bg-danger">Hi, I’m Marek.</h1>
@@ -20,16 +24,20 @@ const AboutMe = () => {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Quaerat neque id ipsa nisi doloremque quos a facere
                 reprehenderit, consequuntur delectus expedita numquam itaque
-                voluptate voluptatum iure, illo obcaecati ex? Vel.
+                voluptate voluptatum iure, illo obcaecati ex? Vel. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Quaerat neque id
+                ipsa nisi doloremque quos a facere reprehenderit, consequuntur
+                delectus expedita numquam itaque voluptate voluptatum iure, illo
+                obcaecati ex? Vel.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="p-5 bg-dark">
+      <section>
         <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-md p-5 text-light">
+          <div class="row">
+            <div class="col-md p-5">
               <h2>1 phase</h2>
               <p class="lead">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
@@ -39,29 +47,27 @@ const AboutMe = () => {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Quaerat neque id ipsa nisi doloremque quos a facere
                 reprehenderit, consequuntur delectus expedita numquam itaque
-                voluptate voluptatum iure, illo obcaecati ex? Vel.
+                voluptate voluptatum iure, illo obcaecati ex? Vel. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Quaerat neque id
+                ipsa nisi doloremque quos a facere reprehenderit, consequuntur
+                delectus expedita numquam itaque voluptate voluptatum iure, illo
+                obcaecati ex? Vel. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Quaerat neque id ipsa nisi doloremque quos a
+                facere reprehenderit, consequuntur delectus expedita numquam
+                itaque voluptate voluptatum iure, illo obcaecati ex? Vel.
               </p>
-            </div>
-            <div class="col-md">
-              <img
-                class="img-fluid rounded-3 shadow p-3 mb-3"
-                src={snowboard}
-                alt=""
-              />
             </div>
           </div>
         </div>
       </section>
-      <section class="p-5">
+      <span className="d-flex justify-content-center">
+        <button className="btn bg-secondary rounded-5" type="submit">
+          1.phase example
+        </button>
+      </span>
+      <section>
         <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-md">
-              <img
-                class="img-fluid rounded-3 shadow p-3 mb-3"
-                src={fifestyle}
-                alt=""
-              />
-            </div>
+          <div class="row">
             <div class="col-md p-5">
               <h2>2 phase</h2>
               <p class="lead">
@@ -72,16 +78,28 @@ const AboutMe = () => {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Quaerat neque id ipsa nisi doloremque quos a facere
                 reprehenderit, consequuntur delectus expedita numquam itaque
-                voluptate voluptatum iure, illo obcaecati ex? Vel.
+                voluptate voluptatum iure, illo obcaecati ex? Vel. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Quaerat neque id
+                ipsa nisi doloremque quos a facere reprehenderit, consequuntur
+                delectus expedita numquam itaque voluptate voluptatum iure, illo
+                obcaecati ex? Vel. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Quaerat neque id ipsa nisi doloremque quos a
+                facere reprehenderit, consequuntur delectus expedita numquam
+                itaque voluptate voluptatum iure, illo obcaecati ex? Vel.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="p-5 bg-dark">
+      <span className="d-flex justify-content-center">
+        <button className="btn bg-secondary rounded-5" type="submit">
+          2.phase example
+        </button>
+      </span>
+      <section>
         <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-md p-5 text-light">
+          <div class="row">
+            <div class="col-md p-5">
               <h2>3 phase</h2>
               <p class="lead">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
@@ -91,19 +109,25 @@ const AboutMe = () => {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Quaerat neque id ipsa nisi doloremque quos a facere
                 reprehenderit, consequuntur delectus expedita numquam itaque
-                voluptate voluptatum iure, illo obcaecati ex? Vel.
+                voluptate voluptatum iure, illo obcaecati ex? Vel. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Quaerat neque id
+                ipsa nisi doloremque quos a facere reprehenderit, consequuntur
+                delectus expedita numquam itaque voluptate voluptatum iure, illo
+                obcaecati ex? Vel. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Quaerat neque id ipsa nisi doloremque quos a
+                facere reprehenderit, consequuntur delectus expedita numquam
+                itaque voluptate voluptatum iure, illo obcaecati ex? Vel.
               </p>
-            </div>
-            <div class="col-md">
-              <img
-                class="img-fluid rounded-3 shadow p-3 mb-3"
-                src={third}
-                alt=""
-              />
             </div>
           </div>
         </div>
       </section>
+      <span className="d-flex justify-content-center">
+        <button className="btn bg-secondary rounded-5 mb-5" type="submit">
+          3.phase example
+        </button>
+      </span>
+
       <Footer />
     </>
   );
