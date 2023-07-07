@@ -1,16 +1,9 @@
 import React from "react";
 import hero from "../images/hero.png";
-import bgheader from "../images/bgheader.png";
 
 const Header = () => {
   return (
-    <section
-      className="p-5"
-      style={{
-        backgroundImage: `url(${bgheader})`,
-        backgroundSize: "contain",
-      }}
-    >
+    <section className="p-5">
       <div className="container">
         <div className="row align-items-center justify-content-between">
           <div className="col-md text-center">

@@ -3,7 +3,7 @@ import { FaReact, FaHtml5, FaBootstrap } from "react-icons/fa";
 import { BiLogoJavascript, BiLogoCss3, BiLogoVuejs } from "react-icons/bi";
 import { BsWordpress, BsGithub } from "react-icons/bs";
 import { SiFigma } from "react-icons/si";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const TechStack = () => {
   return (

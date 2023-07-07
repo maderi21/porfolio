@@ -8,7 +8,7 @@ import RE from "../images/realestate.jpg";
 const Portfolio = () => {
   return (
     <>
-      <section class="p-5 ">
+      <section class="p-5">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
@@ -45,7 +45,7 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      <section class="p-5 ">
+      <section class="p-5">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
@@ -78,7 +78,7 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      <section class="p-5 ">
+      <section class="p-5">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
@@ -115,7 +115,7 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      <section class="p-5 ">
+      <section class="p-5">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
