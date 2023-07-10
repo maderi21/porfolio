@@ -4,29 +4,38 @@ import About from "../components/About";
 import Portfolio from "../components/Portfolio";
 import { Row, Col } from "react-bootstrap";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
+import Projects from "./Projects";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
-    <div>
+    <div className="container">
       <Header />
       <h4 className="bg-primary d-flex justify-content-center text-dark m-0 pt-5 pb-3">
         TECH STACK
       </h4>
       <TechStack />
       <About />
-      <Col className="container">
-        <Row>
+      <Row className="container">
+        <Col>
           <h4 className="bg-primary d-flex justify-content-center text-dark m-0 pt-5 pb-3">
             PORTFOLIO
           </h4>
-        </Row>
-      </Col>
+        </Col>
+      </Row>
       <Portfolio />
-      <Col className="d-flex justify-content-center m-5 p-5">
-        <button class="btn bg-danger rounded-5 text-dark px-4" type="submit">
-          SEE MORE POJECTS...
+
+      <Row className="p-5">
+        <button
+          className="btn bg-danger rounded-5 text-dark d-flex justify-content-center"
+          type="submit"
+          onClick={() => navigate("projects")}
+        >
+          SEE MORE POJECTS..
         </button>
-      </Col>
+      </Row>
+
       <Footer />
     </div>
   );
