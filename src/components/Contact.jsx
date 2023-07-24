@@ -14,11 +14,7 @@ const Contact = () => {
         Launch demo modal
       </Button>
       <div>
-        <Modal
-          className="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-          show={show}
-          onHide={handleClose}
-        >
+        <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>I’d love to hear from you</Modal.Title>
           </Modal.Header>

@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleShow = () => setShow(true);
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-primary">
+      <nav class="navbar navbar-expand-lg bg-primary  text-center">
         <div class="container">
           <Link class="navbar-brand" exact to="/">
             <img src={logo} />
@@ -43,7 +43,7 @@ const Navbar = () => {
               </li>
             </ul>
             <a
-              className="nav-link fs-3 p-1 d-flex text-dark"
+              className="nav-link fs-3 p-1  text-center text-dark "
               href="https://www.linkedin.com/in/marek-kostolansky-762185206/"
               target="_blank"
               rel="noopener noreferrer"
@@ -51,7 +51,7 @@ const Navbar = () => {
               <FaLinkedin />
             </a>
             <a
-              className="nav-link p-1 fs-3 d-flex text-dark"
+              className="nav-link p-1 fs-3  text-center text-dark"
               href="https://www.facebook.com/profile.php?id=1617340063"
               target="_blank"
               rel="noopener noreferrer"
@@ -59,7 +59,7 @@ const Navbar = () => {
               <FaFacebook />
             </a>
             <a
-              class="nav-link p-1 fs-3 d-flex text-dark"
+              class="nav-link p-1 fs-3  text-center text-dark"
               href="https://github.com/maderi21"
               target="_blank"
               rel="noopener noreferrer"
