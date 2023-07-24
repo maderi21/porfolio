@@ -12,7 +12,7 @@ const Portfolio = () => {
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
-              <h4 className="text-dark">Hairstylist landing page</h4>
+              <h4 className="text-dark fw-bold">Hairstylist landing page</h4>
               <p class="lead">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
                 asperiores labore non, ad aliquid accusantium?
@@ -23,16 +23,23 @@ const Portfolio = () => {
                 reprehenderit, consequuntur delectus expedita numquam itaque
                 voluptate voluptatum iure, illo obcaecati ex? Vel.
               </p>
-              <div className="mx-2">
-                <button class="btn bg-danger rounded-5 mx-3 mb-3" type="submit">
+              <div>
+                <a
+                  href="https://maderi21-gabriela.netlify.app/"
+                  class="btn bg-danger  mb-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Live Demo <RxEnter />
-                </button>
-                <button
-                  class="btn bg-secondary rounded-5 mx-3 mb-3"
-                  type="submit"
+                </a>
+                <a
+                  href="https://github.com/maderi21/landing"
+                  class="btn bg-secondary mx-1 mb-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Code <BiGitBranch />
-                </button>
+                </a>
               </div>
             </div>
             <div class="col-md">
@@ -49,7 +56,7 @@ const Portfolio = () => {
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
-              <h4 className="text-dark">Vinary e-shop</h4>
+              <h4 className="text-dark fw-bold">Vinary e-shop</h4>
               <p class="lead">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
                 asperiores labore non, ad aliquid accusantium?
@@ -60,16 +67,23 @@ const Portfolio = () => {
                 reprehenderit, consequuntur delectus expedita numquam itaque
                 voluptate voluptatum iure, illo obcaecati ex? Vel.
               </p>
-              <div className="mx-2">
-                <button class="btn bg-danger rounded-5 mx-3 mb-3" type="submit">
+              <div>
+                <a
+                  href="https://maderi21-fourhills.mdbgo.io/"
+                  class="btn bg-danger  mb-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Live Demo <RxEnter />
-                </button>
-                <button
-                  class="btn bg-secondary rounded-5 mx-3 mb-3"
-                  type="submit"
+                </a>
+                <a
+                  href="https://github.com/maderi21/fourhills"
+                  class="btn bg-secondary mx-1 mb-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Code <BiGitBranch />
-                </button>
+                </a>
               </div>
             </div>
             <div class="col-md">
@@ -82,7 +96,7 @@ const Portfolio = () => {
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
-              <h4 className="text-dark">Kids blog</h4>
+              <h4 className="text-dark fw-bold">Kids blog</h4>
               <p class="lead">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
                 asperiores labore non, ad aliquid accusantium?
@@ -93,16 +107,23 @@ const Portfolio = () => {
                 reprehenderit, consequuntur delectus expedita numquam itaque
                 voluptate voluptatum iure, illo obcaecati ex? Vel.
               </p>
-              <div className="mx-2">
-                <button class="btn bg-danger rounded-5 mx-3 mb-3" type="submit">
+              <div>
+                <a
+                  href="https://maderi21-kiddos.netlify.app/"
+                  class="btn bg-danger  mb-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Live Demo <RxEnter />
-                </button>
-                <button
-                  class="btn bg-secondary rounded-5 mx-3 mb-3"
-                  type="submit"
+                </a>
+                <a
+                  href="https://github.com/maderi21/blog"
+                  class="btn bg-secondary mx-1 mb-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Code <BiGitBranch />
-                </button>
+                </a>
               </div>
             </div>
             <div class="col-md">
@@ -119,7 +140,7 @@ const Portfolio = () => {
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
-              <h4 className="text-dark">Rental Homes Calculator</h4>
+              <h4 className="text-dark fw-bold">Rental Homes Calculator</h4>
               <p class="lead">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
                 asperiores labore non, ad aliquid accusantium?
@@ -130,17 +151,6 @@ const Portfolio = () => {
                 reprehenderit, consequuntur delectus expedita numquam itaque
                 voluptate voluptatum iure, illo obcaecati ex? Vel.
               </p>
-              <div className="mx-2">
-                <button class="btn bg-danger rounded-5 mx-3 mb-3" type="submit">
-                  Live Demo <RxEnter />
-                </button>
-                <button
-                  class="btn bg-secondary rounded-5 mx-3 mb-3"
-                  type="submit"
-                >
-                  Code <BiGitBranch />
-                </button>
-              </div>
             </div>
             <div class="col-md">
               <img class="img-fluid rounded-3 shadow mb-3" src={RE} alt="" />

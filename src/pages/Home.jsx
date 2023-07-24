@@ -28,15 +28,15 @@ const Home = () => {
       </Row>
       <Portfolio />
 
-      <Row className="p-5">
+      <div className="text-center">
         <button
-          className="btn bg-danger rounded-5 text-dark d-flex justify-content-center"
+          className="btn bg-danger text-dark"
           type="submit"
           onClick={() => navigate("projects")}
         >
           SEE MORE POJECTS..
         </button>
-      </Row>
+      </div>
 
       <Footer />
     </div>
