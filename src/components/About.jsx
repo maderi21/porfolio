@@ -1,27 +1,40 @@
-import about from "../images/about.jpg";
+import { Link } from "react-router-dom";
+import { RoughNotation } from "react-rough-notation";
 
 const About = () => {
   return (
     <section class="p-5">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-md">
-            <img class=" img-fluid rounded-3" src={about} alt="" />
-          </div>
           <div class="col-md p-5">
             <h3 className="fw-light">About me</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              neque id ipsa nisi doloremque quos a facere reprehenderit,
-              consequuntur delectus expedita numquam itaque voluptate voluptatum
-              iure, illo obcaecati ex? Vel.
+              I am everlearnig front end dev from{" "}
+              <RoughNotation
+                type="highlight"
+                show={true}
+                color="#fed66d"
+                animationDuration="2500"
+              >
+                Slovakia
+              </RoughNotation>
+              , having academic backgroung but working in completely different
+              field. I am currently looking for more web dev experience,
+              <RoughNotation
+                type="box"
+                show={true}
+                color="tomato"
+                animationDuration="2500"
+              >
+                will you give me a shot?
+              </RoughNotation>
             </p>
-            <a
-              href=""
+            <Link
+              to="/about"
               className="link-offset-2 link-underline link-underline-opacity-0 text-dark"
             >
               continue to read...
-            </a>
+            </Link>
           </div>
         </div>
       </div>

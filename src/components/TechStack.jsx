@@ -7,8 +7,8 @@ import { Col, Row } from "react-bootstrap";
 
 const TechStack = () => {
   return (
-    <div className="bg-secondary text-dark container">
-      <Row className="container text-center p-2">
+    <div className="bg-secondary text-dark">
+      <Row className="text-center p-2">
         <Col className="md-2">
           <FaReact className=" fs-1 mx-1 mt-3" />
           <p className="d-flex justify-content-center mx-1">React</p>

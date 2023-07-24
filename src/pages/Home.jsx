@@ -5,18 +5,20 @@ import Portfolio from "../components/Portfolio";
 import { Row, Col } from "react-bootstrap";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
-import Projects from "./Projects";
 
 const Home = () => {
   const navigate = useNavigate();
+
   return (
     <div className="container">
       <Header />
+
+      <About />
       <h4 className="bg-primary d-flex justify-content-center text-dark m-0 pt-5 pb-3">
         TECH STACK
       </h4>
       <TechStack />
-      <About />
+
       <Row className="container">
         <Col>
           <h4 className="bg-primary d-flex justify-content-center text-dark m-0 pt-5 pb-3">

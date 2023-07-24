@@ -1,7 +1,4 @@
 import aboutme from "../images/aboutme.png";
-import third from "../images/third.jpg";
-import snow from "../images/snow.png";
-import fifestyle from "../images/fifestyle.jpg";
 import Footer from "../components/Footer";
 
 const AboutMe = () => {

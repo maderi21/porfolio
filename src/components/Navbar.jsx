@@ -32,18 +32,18 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <Link class="nav-link" to="/about">
+                <Link class="nav-link text-dark fw-bold" to="/about">
                   About
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/projects">
+                <Link class="nav-link text-dark fw-bold" to="/projects">
                   Projects
                 </Link>
               </li>
             </ul>
             <a
-              class="nav-link fs-3 p-1 d-flex"
+              className="nav-link fs-3 p-1 d-flex text-dark"
               href="https://www.linkedin.com/in/marek-kostolansky-762185206/"
               target="_blank"
               rel="noopener noreferrer"
@@ -51,7 +51,7 @@ const Navbar = () => {
               <FaLinkedin />
             </a>
             <a
-              class="nav-link p-1 fs-3 d-flex"
+              className="nav-link p-1 fs-3 d-flex text-dark"
               href="https://www.facebook.com/profile.php?id=1617340063"
               target="_blank"
               rel="noopener noreferrer"
@@ -59,7 +59,7 @@ const Navbar = () => {
               <FaFacebook />
             </a>
             <a
-              class="nav-link p-1 fs-3 d-flex"
+              class="nav-link p-1 fs-3 d-flex text-dark"
               href="https://github.com/maderi21"
               target="_blank"
               rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const Navbar = () => {
             </a>
 
             <button
-              class="btn bg-secondary m-2 rounded-5"
+              className="btn btn-outline-danger text-dark m-2 fw-bold"
               type="submit"
               onClick={handleShow}
             >
@@ -124,7 +124,11 @@ const Navbar = () => {
                 </Form>
               </Modal.Body>
               <Modal.Footer className="bg-primary border-0">
-                <Button variant="secondary" onClick={handleClose}>
+                <Button
+                  variant="secondary"
+                  onClick={handleClose}
+                  className="bg-danger"
+                >
                   Send
                 </Button>
               </Modal.Footer>
