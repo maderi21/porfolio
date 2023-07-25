@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <div>
       <nav class="navbar navbar-expand-lg bg-primary  text-center">
@@ -86,15 +86,8 @@ const Navbar = () => {
                 </Modal.Title>
               </Modal.Header>
               <Modal.Body className="bg-primary">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Libero sapiente molestias maxime! Ipsa, mollitia ab sunt
-                  obcaecati ad consectetur officiis?
-                </p>
-                <Form
-                  action="https://formsubmit.co/kostolansky.marek@gmail.com"
-                  method="post"
-                >
+                <p>I would love to hear from you.</p>
+                <Form>
                   <Form.Group
                     className="mb-3"
                     controlId="exampleForm.ControlInput1"
@@ -104,7 +97,7 @@ const Navbar = () => {
                       type="Name"
                       placeholder="John P"
                       autoFocus
-                      name="name"
+                      name="from_name"
                     />
                   </Form.Group>
                   <Form.Group
@@ -134,7 +127,7 @@ const Navbar = () => {
                   onClick={handleClose}
                   className="bg-danger"
                   type="submit"
-                  value="send"
+                  value="Send"
                 >
                   Send
                 </Button>

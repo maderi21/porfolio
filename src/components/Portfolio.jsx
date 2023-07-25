@@ -133,7 +133,7 @@ const Portfolio = () => {
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
               <h4 className="text-dark fw-bold">
-                /comming soon/ Rental Homes Calculator
+                /coming soon/ Rental Homes Calculator
               </h4>
               <p class="lead">Calculator for investing in rental Homes</p>
               <p>

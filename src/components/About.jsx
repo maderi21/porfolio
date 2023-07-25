@@ -10,25 +10,28 @@ const About = () => {
             <h3 className="fw-light">About me</h3>
             <p>
               I am a curious front-end web dev located in Bratislava with a
-              thirst for knowledge and a passion
+              thirst for knowledge and a passion for exploration. When you
+              combine my interest for {""}
               <RoughNotation
                 type="highlight"
                 show={true}
-                color="#fed66d"
+                color="tomato"
                 animationDuration="2500"
               >
-                for exploration.
+                learning, travel, eating, and reading,
               </RoughNotation>
+              {""}
+              you will get a pretty nice team member,
               <RoughNotation
                 type="box"
                 show={true}
                 color="tomato"
                 animationDuration="2500"
               >
-                When you combine my interest for learning, travel, eating, and
-                reading, you can get a pretty cool team member, would you try?
+                would you try?
               </RoughNotation>
             </p>
+
             <Link
               to="/about"
               className="link-offset-2 link-underline link-underline-opacity-0 text-dark fw-bold"

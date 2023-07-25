@@ -4,10 +4,10 @@ import { RoughNotation } from "react-rough-notation";
 
 const Header = () => {
   return (
-    <section className="p-5">
+    <section className="pt-3 mt-3">
       <div className="container">
-        <div className="row align-items-center justify-content-between">
-          <div className="col-md text-center">
+        <div className="row align-items-center text-center">
+          <div className="col-md">
             <h1 className="display-4">
               Hi! My name is
               <span className="text-dark fw-bold mx-3">Marek Kostolansky</span>
@@ -22,7 +22,7 @@ const Header = () => {
             </RoughNotation>
           </div>
           <div className="col-md">
-            <img className="img-fluid" src={hero} alt="" />
+            <img className="img-fluid px-5" src={hero} alt="" />
           </div>
         </div>
       </div>
