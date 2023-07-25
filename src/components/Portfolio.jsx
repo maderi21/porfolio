@@ -13,15 +13,12 @@ const Portfolio = () => {
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
               <h4 className="text-dark fw-bold">Hairstylist landing page</h4>
-              <p class="lead">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-                asperiores labore non, ad aliquid accusantium?
-              </p>
+              <p class="lead">Basic landing page for Hair Salon Gabriela.</p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Quaerat neque id ipsa nisi doloremque quos a facere
-                reprehenderit, consequuntur delectus expedita numquam itaque
-                voluptate voluptatum iure, illo obcaecati ex? Vel.
+                Project inspired by a family member created with <br />
+                <span className="fw-bold">Figma, React, BootStrap</span>,using
+                simple <span className="fw-bold">FormSubmit</span> email
+                template for handling contact form.
               </p>
               <div>
                 <a
@@ -57,15 +54,12 @@ const Portfolio = () => {
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
               <h4 className="text-dark fw-bold">Vinary e-shop</h4>
-              <p class="lead">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-                asperiores labore non, ad aliquid accusantium?
-              </p>
+              <p class="lead">Also inspired by family business 4hills</p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Quaerat neque id ipsa nisi doloremque quos a facere
-                reprehenderit, consequuntur delectus expedita numquam itaque
-                voluptate voluptatum iure, illo obcaecati ex? Vel.
+                Easy family vinery e-shop build with{" "}
+                <span className="fw-bold">Figma, React, BootStrap</span>,
+                predictible state container done with{" "}
+                <span className="fw-bold">Redux</span>.
               </p>
               <div>
                 <a
@@ -98,14 +92,12 @@ const Portfolio = () => {
             <div class="col-md p-5">
               <h4 className="text-dark fw-bold">Kids blog</h4>
               <p class="lead">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-                asperiores labore non, ad aliquid accusantium?
+                Inspired by my child, who is always learning new things.
               </p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Quaerat neque id ipsa nisi doloremque quos a facere
-                reprehenderit, consequuntur delectus expedita numquam itaque
-                voluptate voluptatum iure, illo obcaecati ex? Vel.
+                When searching for advice on paranting I have created this blog
+                project for sharing thoughts, made with <br />
+                <span className="fw-bold">Figma, React, BootStrap</span>.
               </p>
               <div>
                 <a
@@ -140,16 +132,14 @@ const Portfolio = () => {
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
-              <h4 className="text-dark fw-bold">Rental Homes Calculator</h4>
-              <p class="lead">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-                asperiores labore non, ad aliquid accusantium?
-              </p>
+              <h4 className="text-dark fw-bold">
+                /comming soon/ Rental Homes Calculator
+              </h4>
+              <p class="lead">Calculator for investing in rental Homes</p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Quaerat neque id ipsa nisi doloremque quos a facere
-                reprehenderit, consequuntur delectus expedita numquam itaque
-                voluptate voluptatum iure, illo obcaecati ex? Vel.
+                Sharing passion for investing in long term RE gave me the idea
+                of creating calculator to evaluate deals, currently ongoing
+                project with <span className="fw-bold">React, BootStrap</span>
               </p>
             </div>
             <div class="col-md">

@@ -5,6 +5,7 @@ import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import PopImage from "./components/popups/PopImage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/" element={<Home />} />
       </Routes>
+      <PopImage />
     </div>
   );
 }

@@ -9,29 +9,29 @@ const About = () => {
           <div class="col-md p-5">
             <h3 className="fw-light">About me</h3>
             <p>
-              I am everlearnig front end dev from{" "}
+              I am a curious front-end web dev located in Bratislava with a
+              thirst for knowledge and a passion
               <RoughNotation
                 type="highlight"
                 show={true}
                 color="#fed66d"
                 animationDuration="2500"
               >
-                Slovakia
+                for exploration.
               </RoughNotation>
-              , having academic backgroung but working in completely different
-              field. I am currently looking for more web dev experience,
               <RoughNotation
                 type="box"
                 show={true}
                 color="tomato"
                 animationDuration="2500"
               >
-                will you give me a shot?
+                When you combine my interest for learning, travel, eating, and
+                reading, you can get a pretty cool team member, would you try?
               </RoughNotation>
             </p>
             <Link
               to="/about"
-              className="link-offset-2 link-underline link-underline-opacity-0 text-dark"
+              className="link-offset-2 link-underline link-underline-opacity-0 text-dark fw-bold"
             >
               continue to read...
             </Link>

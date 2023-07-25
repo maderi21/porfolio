@@ -82,7 +82,7 @@ const Navbar = () => {
             >
               <Modal.Header closeButton className="bg-primary border-0">
                 <Modal.Title className="bg-primary d-flex justify-content-center ">
-                  I’d love to hear from you
+                  Lets Connect!
                 </Modal.Title>
               </Modal.Header>
               <Modal.Body className="bg-primary">
@@ -91,7 +91,10 @@ const Navbar = () => {
                   Libero sapiente molestias maxime! Ipsa, mollitia ab sunt
                   obcaecati ad consectetur officiis?
                 </p>
-                <Form>
+                <Form
+                  action="https://formsubmit.co/kostolansky.marek@gmail.com"
+                  method="post"
+                >
                   <Form.Group
                     className="mb-3"
                     controlId="exampleForm.ControlInput1"
@@ -99,8 +102,9 @@ const Navbar = () => {
                     <Form.Label className="text-dark">Name</Form.Label>
                     <Form.Control
                       type="Name"
-                      placeholder="John Doe"
+                      placeholder="John P"
                       autoFocus
+                      name="name"
                     />
                   </Form.Group>
                   <Form.Group
@@ -112,6 +116,7 @@ const Navbar = () => {
                       type="email"
                       placeholder="name@example.com"
                       autoFocus
+                      name="email"
                     />
                   </Form.Group>
                   <Form.Group
@@ -119,7 +124,7 @@ const Navbar = () => {
                     controlId="exampleForm.ControlTextarea1"
                   >
                     <Form.Label className="text-dark">Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
+                    <Form.Control as="textarea" rows={3} name="message" />
                   </Form.Group>
                 </Form>
               </Modal.Body>
@@ -128,6 +133,8 @@ const Navbar = () => {
                   variant="secondary"
                   onClick={handleClose}
                   className="bg-danger"
+                  type="submit"
+                  value="send"
                 >
                   Send
                 </Button>
