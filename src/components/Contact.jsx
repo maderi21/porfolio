@@ -1,13 +1,36 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [show, setShow] = useState(false);
+  const form = useRef();
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
@@ -24,13 +47,18 @@ const Contact = () => {
               sapiente molestias maxime! Ipsa, mollitia ab sunt obcaecati ad
               consectetur officiis?
             </p>
-            <Form>
+            <Form ref={form} onSubmit={sendEmail}>
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlInput1"
               >
                 <Form.Label>Name</Form.Label>
-                <Form.Control type="Name" placeholder="John Doe" autoFocus />
+                <Form.Control
+                  type="Name"
+                  placeholder="John Doe"
+                  autoFocus
+                  name="from_name"
+                />
               </Form.Group>
               <Form.Group
                 className="mb-3"
@@ -41,6 +69,7 @@ const Contact = () => {
                   type="email"
                   placeholder="name@example.com"
                   autoFocus
+                  name="reply_to"
                 />
               </Form.Group>
               <Form.Group
@@ -48,7 +77,13 @@ const Contact = () => {
                 controlId="exampleForm.ControlTextarea1"
               >
                 <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows={3} />
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  value="Send"
+                  type="submit"
+                  name="message"
+                />
               </Form.Group>
             </Form>
           </Modal.Body>
