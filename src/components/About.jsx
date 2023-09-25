@@ -9,26 +9,16 @@ const About = () => {
           <div class="col-md p-5">
             <h3 className="fw-light">About me</h3>
             <p>
-              I am a curious front-end web dev located in Bratislava with a
-              thirst for knowledge and a passion for exploration. When you
-              combine my interest for {""}
               <RoughNotation
                 type="highlight"
                 show={true}
-                color="tomato"
-                animationDuration="2500"
+                color="#fed66d"
+                animationDuration="3500"
               >
-                learning, travel, eating, and reading,
-              </RoughNotation>
-              {""}
-              you will get a pretty nice team member,
-              <RoughNotation
-                type="box"
-                show={true}
-                color="tomato"
-                animationDuration="2500"
-              >
-                would you try?
+                I am a curious front-end web dev located in Bratislava with a
+                thirst for knowledge and a passion for exploration. When you
+                combine my interests in learning, coding, and general tech, you
+                will get a pretty good team member, would you try?
               </RoughNotation>
             </p>
 

@@ -23,10 +23,10 @@ const AboutMe = () => {
                 self-taught developer with years + experience I had plenty of
                 opportunities to learn about myself as well as discipline and
                 goal settings. Seems like I just started, however, I worked with
-                tech-dev almost the whole of my professional life and the
-                notorious one class in high school. I came across web-dev
-                multiple times in my life and would like to go through them with
-                you.
+                tech-dev almost the whole of my professional life and I also had
+                the notorious one class in high school. I came across web-dev in
+                multiple phases of my life and would like to go through them
+                with you.
               </p>
             </div>
           </div>
@@ -49,13 +49,12 @@ const AboutMe = () => {
               </p>
               <p>
                 My first ever web-dev interaction was done in high school back
-                in 2006, when we had to finish a project at the end of the
-                class. I really did like snowboarding so of course this was the
-                project topic. It was whole build in one{" "}
-                <span className="fw-bold">text file</span>, I mean the notepad
-                text file, no IDE as we use now.It was a bit chalange at first,
-                but I enjoyed the process of building something creative -
-                cannot remember the mark from teacher.
+                in 2006 when we had to finish a project at the end of the class.
+                I did like snowboarding so of course this was the project topic.
+                It was a build-in-one <span className="fw-bold">text file</span>
+                , no IDE as we use now. While it was a bit challenging at first,
+                I enjoyed the process of building something creative, however
+                cannot remember the mark from the teacher.
               </p>
             </div>
           </div>
@@ -84,23 +83,24 @@ const AboutMe = () => {
                 <h2>2. phase</h2>
               </RoughNotation>
               <p class="lead">
-                Firt business - blog, selling adds, couching and course
+                First business - blog, selling ads, coaching, and course
                 creation.
               </p>
               <p>
-                When I graduated college in 2013 I moved to Oxford - England. I
-                had several jobs and this one side hustle where I would firstly
-                create a blog in <span className="fw-bold">WordPress</span> -
-                writing about things I love /travel/business/food/learning and
-                then using <span className="fw-bold">Google AdSense</span> to
-                monetize it. It went ok, but I was hungry and told I could
-                inspire people and help them create their own businesses online.
-                So I wrote an ebook, which was selling on{" "}
-                <span className="fw-bold">Amazon Kindle</span>, build new
+                When I graduated from college in 2013 I moved to Oxford -
+                England. I had several jobs and this side hustle where I would
+                firstly create a blog in{""}
+                <span className="fw-bold">WordPress</span> - writing about
+                things I love /travel/business/food/learning and then using{" "}
+                <span className="fw-bold">Google AdSense</span> to monetize it.
+                It went okey, but I was hungry and told I could inspire people
+                and help them create their business online. So I wrote an ebook,
+                which was selling on{" "}
+                <span className="fw-bold">Amazon Kindle</span>, built a new
                 website with coaching services used{" "}
                 <span className="fw-bold">Mailchimp</span> to automate my
                 marketing. Later on, I created an online course for which you
-                could signup for and was all automated. For Social media I used{" "}
+                could signup, and was all automated. For Social media I used{" "}
                 {""}
                 <span className="fw-bold">Hootsuite</span> to manage content.
               </p>
@@ -131,7 +131,7 @@ const AboutMe = () => {
                 <h2>3. phase</h2>
               </RoughNotation>
               <p class="lead">
-                Inspired by friend of mine, I have decided to learn more about
+                Inspired by a friend of mine, I have decided to learn more about
                 web-dev and it was the best decision so far.
               </p>
               <p>
@@ -140,14 +140,13 @@ const AboutMe = () => {
                 first in Feb 2022 in <span className="fw-bold">CodeCademy</span>
                 , then moved to <span className="fw-bold">JavaScript</span> and
                 later to <span className="fw-bold">React</span>. I did few
-                courses on <span className="fw-bold">Udemy</span> and then
-                forwarded to Feb 2023 I was helping with open source web3
-                project, where I would commit my code and actually get paid. It
-                was in <span className="fw-bold">Vue and Nuxt</span>, however,
-                with a baby born at home I had to stop and work slowly on my own
-                projects. I choose React as my major framework and dove
-                deeper.The Result of my work can be seen on projects page. I am
-                also active member of {""}
+                courses on <span className="fw-bold">Udemy</span> and then in
+                Feb 2023 I was helping with an open source web3 project, where I
+                would write <span className="fw-bold">Vue and Nuxt</span> code
+                and got paid. It was a bit hardcore with a baby born, so I had
+                to stop and work slowly on my projects. I've chosen React as my
+                major framework and dove deeper. The result of my work can be
+                seen on the projects page. I am also an active member of the{""}
                 <span className="fw-bold">Code Beer Bratislava</span> meetup
                 whenever possible and still eager to learn more.
               </p>

@@ -56,7 +56,7 @@ const Portfolio = () => {
               <h4 className="text-dark fw-bold">Vinary e-shop</h4>
               <p class="lead">Also inspired by family business 4hills</p>
               <p>
-                Easy family vinery e-shop build with{" "}
+                Family vinery e-shop built with{" "}
                 <span className="fw-bold">Figma, React, BootStrap</span>,
                 predictible state container done with{" "}
                 <span className="fw-bold">Redux</span>.
@@ -95,7 +95,7 @@ const Portfolio = () => {
                 Inspired by my child, who is always learning new things.
               </p>
               <p>
-                When searching for advice on paranting I have created this blog
+                When searching for advice on parenting I have created this blog
                 project for sharing thoughts, made with <br />
                 <span className="fw-bold">Figma, React, BootStrap</span>.
               </p>
@@ -137,8 +137,8 @@ const Portfolio = () => {
               </h4>
               <p class="lead">Calculator for investing in rental Homes</p>
               <p>
-                Sharing passion for investing in long term RE gave me the idea
-                of creating calculator to evaluate deals, currently ongoing
+                Sharing a passion for investing in long-term RE gave me the idea
+                of creating a calculator to evaluate deals, currently ongoing
                 project with <span className="fw-bold">React, BootStrap</span>
               </p>
             </div>

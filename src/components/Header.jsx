@@ -15,10 +15,10 @@ const Header = () => {
             <RoughNotation
               type="highlight"
               show={true}
-              color="#fed66d"
-              animationDuration="1780"
+              color="tomato"
+              animationDuration="3000"
             >
-              <h1>Front End Developer</h1>
+              <h1>Front-End Developer</h1>
             </RoughNotation>
           </div>
           <div className="col-md">

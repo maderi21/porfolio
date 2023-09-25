@@ -34,7 +34,7 @@ const Home = () => {
           type="submit"
           onClick={() => navigate("projects")}
         >
-          SEE MORE POJECTS..
+          SEE MORE PROJECTS..
         </button>
       </div>
 
