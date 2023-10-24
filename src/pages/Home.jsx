@@ -30,7 +30,7 @@ const Home = () => {
 
       <div className="text-center">
         <button
-          className="btn bg-danger text-dark"
+          className="btn bg-danger text-dark mb-3"
           type="submit"
           onClick={() => navigate("projects")}
         >

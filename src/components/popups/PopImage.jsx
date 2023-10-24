@@ -5,53 +5,53 @@ const PopImage = () => {
   return (
     <>
       <div
-        class="modal fade"
+        className="modal fade"
         id="first"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+        <div className="modal-header">
+          <h1 className="modal-title fs-5" id="staticBackdropLabel">
             1.project
           </h1>
           <button
             type="button"
-            class="btn-close"
+            className="btn-close"
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-dialog">
-          <div class="modal-content">
+        <div className="modal-dialog">
+          <div className="modal-content">
             <img src={snow} />
           </div>
         </div>
       </div>
       <div
-        class="modal fade"
+        className="modal fade"
         id="second"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+        <div className="modal-header">
+          <h1 className="modal-title fs-5" id="staticBackdropLabel">
             2.project
           </h1>
           <button
             type="button"
-            class="btn-close"
+            className="btn-close"
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-dialog">
-          <div class="modal-content">
+        <div className="modal-dialog">
+          <div className="modal-content">
             <img src={fife} />
           </div>
         </div>

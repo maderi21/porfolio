@@ -3,10 +3,10 @@ import { RoughNotation } from "react-rough-notation";
 
 const About = () => {
   return (
-    <section class="p-5">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md p-5">
+    <section className="p-5">
+      <div className="container">
+        <div className="row align-items-center justify-content-between">
+          <div className="col-md p-5">
             <h3 className="fw-light">About me</h3>
             <p>
               <RoughNotation

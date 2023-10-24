@@ -6,16 +6,16 @@ const AboutMe = () => {
   return (
     <>
       <section className="p-5">
-        <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-md">
+        <div className="container">
+          <div className="row align-items-center justify-content-between">
+            <div className="col-md">
               <img
-                class="img-fluid rounded-3 shadow mb-1"
+                className="img-fluid rounded-3 shadow mb-1"
                 src={aboutme}
                 alt=""
               />
             </div>
-            <div class="col-md p-5">
+            <div className="col-md p-5">
               <h1>Hi, I’m Marek.</h1>
               <h2>It is really nice to see you here!</h2>
               <p>
@@ -33,9 +33,9 @@ const AboutMe = () => {
         </div>
       </section>
       <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md p-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-md p-5">
               <RoughNotation
                 type="highlight"
                 show={true}
@@ -44,7 +44,7 @@ const AboutMe = () => {
               >
                 <h2>1. phase</h2>
               </RoughNotation>
-              <p class="lead">
+              <p className="lead">
                 The notorios one class of web-dev in high school.
               </p>
               <p>
@@ -71,9 +71,9 @@ const AboutMe = () => {
         </button>
       </span>
       <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md p-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-md p-5">
               <RoughNotation
                 type="highlight"
                 show={true}
@@ -82,7 +82,7 @@ const AboutMe = () => {
               >
                 <h2>2. phase</h2>
               </RoughNotation>
-              <p class="lead">
+              <p className="lead">
                 First business - blog, selling ads, coaching, and course
                 creation.
               </p>
@@ -119,9 +119,9 @@ const AboutMe = () => {
         </button>
       </span>
       <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md p-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-md p-5">
               <RoughNotation
                 type="highlight"
                 show={true}
@@ -130,7 +130,7 @@ const AboutMe = () => {
               >
                 <h2>3. phase</h2>
               </RoughNotation>
-              <p class="lead">
+              <p className="lead">
                 Inspired by a friend of mine, I have decided to learn more about
                 web-dev and it was the best decision so far.
               </p>

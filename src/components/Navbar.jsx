@@ -1,25 +1,40 @@
 import logo from "../images/logo.png";
 import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
-import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
+import { useState, useRef } from "react";
 import Modal from "react-bootstrap/Modal";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_awi0e0g",
+        "template_r0f6i6n",
+        form.current,
+        "NgjQDW0PY3OmZ7fdj"
+      )
+      .then((error) => {
+        console.log(error.text);
+      });
+  };
 
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-primary  text-center">
-        <div class="container">
-          <Link class="navbar-brand" exact to="/">
+      <nav className="navbar navbar-expand-lg bg-primary  text-center">
+        <div className="container">
+          <Link className="navbar-brand" to="/">
             <img src={logo} />
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -27,17 +42,17 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <Link class="nav-link text-dark fw-bold" to="/about">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link text-dark fw-bold" to="/about">
                   About
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link text-dark fw-bold" to="/projects">
+              <li className="nav-item">
+                <Link className="nav-link text-dark fw-bold" to="/projects">
                   Projects
                 </Link>
               </li>
@@ -59,7 +74,7 @@ const Navbar = () => {
               <FaFacebook />
             </a>
             <a
-              class="nav-link p-1 fs-3  text-center text-dark"
+              className="nav-link p-1 fs-3  text-center text-dark"
               href="https://github.com/maderi21"
               target="_blank"
               rel="noopener noreferrer"
@@ -87,51 +102,38 @@ const Navbar = () => {
               </Modal.Header>
               <Modal.Body className="bg-primary">
                 <p>I would love to hear from you.</p>
-                <Form>
-                  <Form.Group
-                    className="mb-3"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <Form.Label className="text-dark">Name</Form.Label>
-                    <Form.Control
-                      type="Name"
-                      placeholder="John P"
-                      autoFocus
-                      name="from_name"
-                    />
-                  </Form.Group>
-                  <Form.Group
-                    className="mb-3"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <Form.Label className="text-dark">Email address</Form.Label>
-                    <Form.Control
-                      type="email"
-                      placeholder="name@example.com"
-                      autoFocus
-                      name="email"
-                    />
-                  </Form.Group>
-                  <Form.Group
-                    className="mb-3"
-                    controlId="exampleForm.ControlTextarea1"
-                  >
-                    <Form.Label className="text-dark">Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} name="message" />
-                  </Form.Group>
-                </Form>
+
+                <form ref={form} onSubmit={sendEmail}>
+                  <label className="mb-2">Name</label>
+                  <input
+                    className="d-flex justify-content-center mb-3"
+                    type="text"
+                    name="user_name"
+                    placeholder="John P"
+                    autoFocus
+                  />
+                  <label className="mb-2">Email</label>
+                  <input
+                    type="email"
+                    name="user_email"
+                    placeholder="johnp@gmail.com"
+                    autoFocus
+                    className="d-flex justify-content-center mb-3"
+                  />
+                  <label className="mb-2">Message</label>
+                  <textarea
+                    className="d-flex justify-content-center mb-3"
+                    name="message"
+                  />
+                  <input
+                    className="mb-3 bg-danger border-0"
+                    autoFocus
+                    type="submit"
+                    value="Send"
+                    onClick={handleClose}
+                  />
+                </form>
               </Modal.Body>
-              <Modal.Footer className="bg-primary border-0">
-                <Button
-                  variant="secondary"
-                  onClick={handleClose}
-                  className="bg-danger"
-                  type="submit"
-                  value="Send"
-                >
-                  Send
-                </Button>
-              </Modal.Footer>
             </Modal>
           </div>
         </div>
