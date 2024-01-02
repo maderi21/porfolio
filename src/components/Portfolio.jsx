@@ -138,15 +138,31 @@ const Portfolio = () => {
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div className="col-md p-5">
-              <h4 className="text-dark fw-bold">
-                /coming soon/ Rental Homes Calculator
-              </h4>
+              <h4 className="text-dark fw-bold">Rental Homes Calculator</h4>
               <p className="lead">Calculator for investing in rental Homes</p>
               <p>
                 Sharing a passion for investing in long-term RE gave me the idea
                 of creating a calculator to evaluate deals, currently ongoing
                 project with <span className="fw-bold">React, BootStrap</span>
               </p>
+              <div>
+                <a
+                  href="https://longterminvesting.netlify.app/"
+                  className="btn bg-danger  mb-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo <RxEnter />
+                </a>
+                <a
+                  href="https://github.com/maderi21/ROI"
+                  className="btn bg-secondary mx-1 mb-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code <BiGitBranch />
+                </a>
+              </div>
             </div>
             <div className="col-md">
               <img

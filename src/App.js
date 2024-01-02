@@ -7,6 +7,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import PopImage from "./components/popups/PopImage";
 
+
+
 function App() {
   return (
     <div className="bg-primary">
