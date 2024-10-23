@@ -58,7 +58,7 @@ const Navbar = () => {
               </li>
             </ul>
             <a
-              className="nav-link fs-3 p-1  text-center text-dark "
+              className="nav-link fs-3 p-1 text-center text-dark mb-1"
               href="https://www.linkedin.com/in/marek-kostolansky-762185206/"
               target="_blank"
               rel="noopener noreferrer"
@@ -66,7 +66,7 @@ const Navbar = () => {
               <FaLinkedin />
             </a>
             <a
-              className="nav-link p-1 fs-3  text-center text-dark"
+              className="nav-link p-1 fs-3  text-center text-dark mb-1"
               href="https://www.facebook.com/profile.php?id=1617340063"
               target="_blank"
               rel="noopener noreferrer"
@@ -74,7 +74,7 @@ const Navbar = () => {
               <FaFacebook />
             </a>
             <a
-              className="nav-link p-1 fs-3  text-center text-dark"
+              className="nav-link p-1 fs-3  text-center text-dark mb-1"
               href="https://github.com/maderi21"
               target="_blank"
               rel="noopener noreferrer"
@@ -89,7 +89,6 @@ const Navbar = () => {
             >
               Contact
             </button>
-
             <Modal
               className="modal-dialog-centered d-flex justify-content-center"
               show={show}
