@@ -16,10 +16,10 @@ const Navbar = () => {
 
     emailjs
       .sendForm(
-        "service_4fwso6s", // Your EmailJS service ID
-        "template_aimppp5", // Your EmailJS template ID
-        form.current, // Reference to your form
-        "oSwrdusH_ipq3Cr8D" // Your EmailJS user ID
+        "service_4fwso6s",
+        "template_aimppp5",
+        form.current,
+        "oSwrdusH_ipq3Cr8D"
       )
       .then((result) => {
         console.log("Email sent successfully:", result.text);

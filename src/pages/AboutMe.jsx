@@ -89,7 +89,7 @@ const AboutMe = () => {
               <p>
                 When I graduated from college in 2013 I moved to Oxford -
                 England. I had several jobs and this side hustle where I would
-                firstly create a blog in{""}
+                firstly create a blog in {""}
                 <span className="fw-bold">WordPress</span> - writing about
                 things I love /travel/business/food/learning and then using{" "}
                 <span className="fw-bold">Google AdSense</span> to monetize it.
@@ -136,17 +136,17 @@ const AboutMe = () => {
               </p>
               <p>
                 I started to learn <span className="fw-bold">HTML and CSS</span>
-                {""}
-                first in Feb 2022 in <span className="fw-bold">CodeCademy</span>
-                , then moved to <span className="fw-bold">JavaScript</span> and
-                later to <span className="fw-bold">React</span>. I did few
-                courses on <span className="fw-bold">Udemy</span> and then in
-                Feb 2023 I was helping with an open source web3 project, where I
-                would write <span className="fw-bold">Vue and Nuxt</span> code
-                and got paid. It was a bit hardcore with a baby born, so I had
-                to stop and work slowly on my projects. I've chosen React as my
-                major framework and dove deeper. The result of my work can be
-                seen on the projects page. I am also an active member of the{""}
+                {""} first in Feb 2022 in{" "}
+                <span className="fw-bold">CodeCademy</span>, then moved to{" "}
+                <span className="fw-bold">JavaScript</span> and later to{" "}
+                <span className="fw-bold">React</span>. I did few courses on{" "}
+                <span className="fw-bold">Udemy</span> and then in Feb 2023 I
+                was helping with an open source web3 project, where I would
+                write <span className="fw-bold">Vue and Nuxt</span> code and got
+                paid. It was a bit hardcore with a baby born, so I had to stop
+                and work slowly on my projects. I've chosen React as my major
+                framework and dove deeper. The result of my work can be seen on
+                the projects page. I am also an active member of the {""}
                 <span className="fw-bold">Code Beer Bratislava</span> meetup
                 whenever possible and still eager to learn more.
               </p>
