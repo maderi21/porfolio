@@ -16,13 +16,17 @@ const Navbar = () => {
 
     emailjs
       .sendForm(
-        "service_awi0e0g",
-        "template_r0f6i6n",
-        form.current,
-        "NgjQDW0PY3OmZ7fdj"
+        "service_4fwso6s", // Your EmailJS service ID
+        "template_aimppp5", // Your EmailJS template ID
+        form.current, // Reference to your form
+        "oSwrdusH_ipq3Cr8D" // Your EmailJS user ID
       )
-      .then((error) => {
-        console.log(error.text);
+      .then((result) => {
+        console.log("Email sent successfully:", result.text);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error.text);
+        alert("Failed to send email. Please try again.");
       });
   };
 
